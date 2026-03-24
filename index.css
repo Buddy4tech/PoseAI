@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --accent: #f97316;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+
+.filter-none { filter: none; }
+.filter-cinematic { filter: contrast(1.2) saturate(0.8) hue-rotate(-10deg); }
+.filter-vintage { filter: sepia(0.5) contrast(0.9) brightness(1.1); }
+.filter-bw { filter: grayscale(1); }
+.filter-vivid { filter: saturate(1.5) contrast(1.1); }
+.filter-warm { filter: sepia(0.2) saturate(1.2) hue-rotate(-5deg); }

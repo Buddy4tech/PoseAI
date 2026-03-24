@@ -1,0 +1,7 @@
+{
+  "name": "PoseAI - Your AI Photographer",
+  "description": "Discover and recreate the perfect photo poses using AI guidance and real-time pose tracking.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
